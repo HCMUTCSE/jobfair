@@ -2,40 +2,93 @@ import { motion } from "framer-motion";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
-const sponsors = [
+type Sponsor = {
+  id: number;
+  name: string;
+  tier: string;
+  color: string;
+  description: string;
+  image?: string;
+};
+
+const sponsors: Sponsor[] = [
   {
-    name: "VNG Corporation",
+    id: 1,
+    name: "NVIDIA",
     tier: "Diamond",
-    color: "bg-green-sponsor",
+    color: "bg-white",
+    image: "/NVIDIA2.png",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget fermentum ultricies.",
+      "Trái tim của cuộc cách mạng AI toàn cầu. Không chỉ dừng lại ở card đồ họa, tinh thần của NVIDIA hiện nay là AI vật lý và siêu tính toán, dẫn dắt thế giới tiến vào kỷ nguyên robot và xe tự hành.",
   },
   {
-    name: "KMS Technology",
+    id: 2,
+    name: "VNG Corp",
     tier: "Gold",
     color: "bg-peach-sponsor",
+    image: "/VNG.png",
     description:
-      "Bright Minds, Bold Solutions. Building world-class technology products and services.",
+      "Kỳ lân công nghệ đầu tiên của Việt Nam với tinh thần đón nhận thách thức. Họ sở hữu hệ sinh thái số toàn diện (Zalo, ZaloPay, Games) với khát vọng mang công nghệ Việt vươn tầm quốc tế.",
   },
   {
-    name: "ISB Vietnam",
+    id: 3,
+    name: "KMS",
     tier: "Gold",
     color: "bg-blue-sponsor",
+    image: "/KMS.png",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod vitae sapien.",
+      "Chuyên gia gia công và phát triển sản phẩm phần mềm. Đây được coi là vườn ươm công nghệ với văn hóa chú trọng phát triển con người và tạo ra những sản phẩm phần mềm tiêu chuẩn Mỹ.",
   },
   {
-    name: "TechCorp",
+    id: 4,
+    name: "FPT Software",
     tier: "Silver",
     color: "bg-green-sponsor",
+    image: "/FPT.png",
     description:
-      "Innovation meets excellence. A leading technology company driving digital transformation.",
+      "Cánh chim đầu đàn trong xuất khẩu phần mềm Việt Nam. Tinh thần cốt lõi là lấy con người làm trọng tâm và sự bền bỉ trong việc đưa trí tuệ Việt chinh phục các khách hàng Fortune 500 toàn cầu.",
+  },
+  {
+    id: 5,
+    name: "Sacombank",
+    tier: "Silver",
+    color: "bg-yellow-sponsor",
+    image: "/SACOM.png",
+    description:
+      "Một trong những ngân hàng thương mại cổ phần hàng đầu Việt Nam. Tinh thần mới của họ là Vững vàng - Chuẩn mực - Thịnh vượng, tập trung vào việc lấy khách hàng làm trọng tâm và tiên phong trong chuyển đổi số ngân hàng.",
+  },
+  {
+    id: 6,
+    name: "Veri Silicon",
+    tier: "Silver",
+    color: "bg-green-sponsor",
+    image: "/Veri.png",
+    description:
+      "Gã khổng lồ thầm lặng trong ngành bán dẫn. Họ hoạt động theo mô hình SiP (System-in-Package) và dịch vụ thiết kế chip, đóng vai trò nền tảng giúp hiện thực hóa ý tưởng phần cứng phức tạp.",
+  },
+  {
+    id: 7,
+    name: "ISB",
+    tier: "Silver",
+    color: "bg-green-sponsor",
+    image: "/ISB.png",
+    description:
+      "Đơn vị giáo dục công lập hàng đầu với tinh thần Nội lực - Bứt phá. Đây là nơi đào tạo tài năng theo chuẩn quốc tế, hướng tới việc kiến tạo thế hệ lãnh đạo trẻ có tư duy toàn cầu.",
+  },
+  {
+    id: 8,
+    name: "NEXON",
+    tier: "Silver",
+    color: "bg-green-sponsor",
+    image: "/Nexon.png",
+    description:
+      "Ông lớn ngành game đến từ Hàn Quốc. Tinh thần của họ nằm ở sự sáng tạo và vận hành các thế giới ảo lâu đời (như MapleStory, KartRider), tập trung vào trải nghiệm người chơi trực tuyến và mô hình kinh doanh game dịch vụ (Live Operations)",
   },
 ];
 
 const AboutSponsor = () => {
   const [page, setPage] = useState(0);
-  const perPage = 4;
+  const perPage = 2;
   const totalPages = Math.ceil(sponsors.length / perPage);
 
   return (
@@ -70,7 +123,7 @@ const AboutSponsor = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-4">
           {/* Left text column */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -79,10 +132,10 @@ const AboutSponsor = () => {
             className="space-y-4"
           >
             <p className="text-muted-foreground leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in viverra neque. Morbi pharetra, mi in volutpat aliquam, sem velit consectetur elit.
+              Sự thành công của CSE JOB FAIR 2026 không chỉ nằm ở những con số, mà còn ở sự tin tưởng và đồng hành từ các đối tác doanh nghiệp hàng đầu – những đơn vị không chỉ dẫn đầu về công nghệ và giải pháp, mà còn chung tay cùng chúng tôi kiến tạo nên những giá trị bền vững cho CSE trong thời gian vừa qua. Sự hiện diện của quý doanh nghiệp chính là bảo chứng cho chất lượng và tầm vóc của JOB FAIR năm nay."
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Suspendisse condimentum finibus diam ut sollicitudin. Morbi hendrerit interdum nisi, eu gravida est vehicula vel.
+              Trang thông tin này là lời tri ân sâu sắc nhất gửi đến quý đối tác vì đã trở thành nguồn động lực quý giá giúp chúng tôi hiện thực hóa sứ mệnh của mình - đưa sinh viên CSE gần hơn nữa với doanh nghiệp.
             </p>
             <button className="flex items-center gap-2 text-accent font-semibold text-sm hover:gap-3 transition-all">
               <ArrowRight size={16} />
@@ -91,10 +144,10 @@ const AboutSponsor = () => {
           </motion.div>
 
           {/* Right sponsor cards */}
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 gap-5 md:gap-6">
             {sponsors.slice(page * perPage, (page + 1) * perPage).map((sponsor, i) => (
               <motion.div
-                key={sponsor.name}
+                key={sponsor.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -102,14 +155,24 @@ const AboutSponsor = () => {
                 className="group"
               >
                 <div
-                  className={`${sponsor.color} rounded-2xl aspect-square flex items-center justify-center p-6 shadow-card group-hover:shadow-card-hover transition-all duration-300 group-hover:-translate-y-1 cursor-pointer`}
+                  className={`${sponsor.color} rounded-3xl aspect-square flex items-center justify-center p-8 shadow-card group-hover:shadow-card-hover transition-all duration-300 group-hover:-translate-y-1 cursor-pointer`}
                 >
-                  <span className="font-display font-bold text-xl text-navy text-center">
-                    {sponsor.name}
-                  </span>
+                  {sponsor.image ? (
+                    <img
+                      src={sponsor.image}
+                      alt={`${sponsor.name} logo`}
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  ) : (
+                    <span className="font-display font-bold text-2xl text-navy text-center">
+                      {sponsor.name}
+                    </span>
+                  )}
                 </div>
                 <div className="mt-3 px-1">
-                  <p className="text-xs text-muted-foreground line-clamp-2">{sponsor.description}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed break-words">
+                    {sponsor.description}
+                  </p>
                 </div>
               </motion.div>
             ))}
