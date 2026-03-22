@@ -15,7 +15,7 @@ const Index = () => {
       <Sponsor />
       <AboutSponsor />
       <AchievementsSection />
-      <View modelUrl="/a.glb" />
+      <View modelUrl="/Map.glb" />
       <Footer />
     </div>
   );
