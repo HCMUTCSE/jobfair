@@ -4,19 +4,19 @@ import { useState } from "react";
 
 const achievements = [
   {
-    title: "20+ Companies",
+    title: "300+ doanh nghiệp",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra neque.",
   },
   {
-    title: "500+ Students",
+    title: "30+ gian hàng",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra.",
   },
   {
-    title: "100+ Offers",
+    title: "2000+ sinh viên đã tham gia",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum.",
   },
   {
-    title: "10 Workshops",
+    title: "2000+ job được giới thiệu",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit.",
   },
 ];
@@ -34,7 +34,7 @@ const AchievementsSection = () => {
             viewport={{ once: true }}
             className="font-display font-bold text-3xl md:text-4xl text-foreground                                                                  "
           >
-           Đợi content NNUN
+           Hành trình 20 năm
           </motion.h2>
           <div className="flex gap-2">
             <button

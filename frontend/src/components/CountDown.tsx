@@ -27,8 +27,15 @@ const EnrollPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center px-4 py-12">
-      <div className="max-w-2xl w-full">
+    <div className="relative min-h-screen bg-background flex items-center justify-center px-4 py-12 overflow-hidden">
+      <img
+        src="/10.jpg"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full object-cover blur-[2px]"
+      />
+      <div className="absolute inset-0 bg-background/10" />
+      <div className="relative z-10 max-w-2xl w-full">
 
         {/* Phần này chưa xử lí nên cmt lại */}
         {/* <Link
@@ -58,8 +65,22 @@ const EnrollPage = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="bg-card rounded-3xl border border-border shadow-card p-8 md:p-12 text-center"
+          className="relative overflow-hidden bg-card/40 rounded-3xl border border-border shadow-card p-8 md:p-12 text-center"
         >
+          <div className="pointer-events-none absolute inset-0 rounded-3xl overflow-hidden ring-1 ring-white/10">
+            <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-gold/5 rounded-full blur-3xl" />
+            <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
+            <div
+              className="absolute inset-0 opacity-[0.03]"
+              style={{
+                backgroundImage:
+                  "linear-gradient(hsl(0 0% 100%) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 100%) 1px, transparent 1px)",
+                backgroundSize: "60px 60px",
+              }}
+            />
+          </div>
+
+          <div className="relative z-10">
           {/* Number badge */}
           <div className="inline-flex items-baseline gap-1 mb-6">
             <span className="font-display font-bold text-6xl text-accent">20</span>
@@ -98,7 +119,7 @@ const EnrollPage = () => {
           </div>
 
           {/* Info rows */}
-          <div className="space-y-3 text-left max-w-sm mx-auto mb-8">
+          {/* <div className="space-y-3 text-left max-w-sm mx-auto mb-8">
             <div className="flex items-center justify-between py-2 border-b border-border">
               <span className="text-sm text-muted-foreground">Mã số đăng ký của bạn</span>
               <span className="text-sm font-bold text-foreground">CSE-2026-0020</span>
@@ -107,7 +128,7 @@ const EnrollPage = () => {
               <span className="text-sm text-muted-foreground">Sắc khách tham gia số</span>
               <span className="text-sm font-bold text-foreground">20</span>
             </div>
-          </div>
+          </div> */}
 
           {/* Action buttons */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -116,20 +137,21 @@ const EnrollPage = () => {
               whileTap={{ scale: 0.98 }}
               className="bg-accent text-accent-foreground px-8 py-3 rounded-xl font-display font-bold text-sm animate-pulse-glow"
             >
-              VÀO THÔI
+              ĐĂNG KÝ THAM GIA
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="bg-muted text-foreground px-8 py-3 rounded-xl font-display font-bold text-sm"
             >
-              Share
+              ĐĂNG KÝ CV CLINIC
             </motion.button>
+          </div>
           </div>
         </motion.div>
 
         {/* Sponsor info below */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
@@ -138,7 +160,7 @@ const EnrollPage = () => {
           <p className="text-muted-foreground text-sm leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur vulputate libero. Fusce efficitur vel sem vitae semper. Maecenas feugiat tempus lacinia. Suspendisse condimentum finibus diam ut sollicitudin.
           </p>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );

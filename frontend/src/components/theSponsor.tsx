@@ -30,6 +30,17 @@ const theSponsor = () => {
           </div>
         </motion.div>
 
+        <div>
+            <motion.h2
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="font-display font-bold text-3xl md:text-4xl text-foreground"
+            >
+              Nhà tài trợ năm
+            </motion.h2>
+          </div>
+
         {/* Sponsor tiers */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -38,15 +49,16 @@ const theSponsor = () => {
           className="space-y-8 sm:space-y-10"
         >
           <div>
-            <p className="text-gold/80 text-lg py-5 sm:text-xl md:text-2xl uppercase tracking-[0.14em] sm:tracking-[0.1em] mb-3 font-medium text-center">Đối tác chiến lược</p>
+            <p className="text-gold/80 text-lg py-5 sm:text-xl md:text-2xl uppercase tracking-[0.14em] sm:tracking-[0.1em] mb-3 font-medium text-center">Kim cương</p>
             <div className="flex flex-wrap justify-center gap-5 sm:gap-8 md:gap-12 items-center">
               <img src="/VNG.png" alt="" className="h-14 sm:h-16 md:h-20 w-auto max-w-[40vw] sm:max-w-none object-contain" aria-hidden="true" />
-              <img src="/NVIDIA2.png" alt="" className="h-16 sm:h-20 md:h-24 w-auto max-w-[50vw] sm:max-w-none object-contain" aria-hidden="true" />
               <img src="/KMS.png" alt="" className="h-14 sm:h-16 md:h-20 w-auto max-w-[45vw] sm:max-w-none object-contain" aria-hidden="true" />
+              <img src="/NVIDIA2.png" alt="" className="h-16 sm:h-20 md:h-24 w-auto max-w-[45vw] sm:max-w-none object-contain" aria-hidden="true" />
+              
             </div>
           </div>
           <div>
-            <p className="text-gold/80 text-lg py-5 sm:text-xl md:text-2xl uppercase tracking-[0.14em] sm:tracking-[0.1em] mb-3 font-medium text-center pt-3 sm:pt-5">Đồng hành và phát triển</p>
+            <p className="text-gold/80 text-lg py-5 sm:text-xl md:text-2xl uppercase tracking-[0.14em] sm:tracking-[0.1em] mb-3 font-medium text-center pt-3 sm:pt-5">Vàng</p>
             <div className="space-y-4 sm:space-y-6 md:space-y-8">
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 md:gap-10 items-center justify-items-center">
                 <img src="/FS.png" alt="" className="h-12 sm:h-14 md:h-16 w-auto max-w-[40vw] sm:max-w-none object-contain" aria-hidden="true" />

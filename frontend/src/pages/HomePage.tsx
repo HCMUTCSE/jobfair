@@ -17,8 +17,8 @@ const HomePage = () => {
                 <Count />
                 <Sponsor />
                 <AboutSponsor />
-                <Brand/>
                 <AchievementsSection />
+                <Brand/>
                 <View modelUrl="/Map.glb" />
             </main>
             <Footer />

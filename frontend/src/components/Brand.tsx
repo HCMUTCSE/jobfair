@@ -25,7 +25,7 @@ const Brand = ({ images = defaultImages }: BrandProps) => {
     <section id="partners" className="py-20 px-6 bg-background my-auto">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between mb-12">
-          <h2 className="font-display font-bold text-3xl md:text-4xl text-foreground">Nhận diện thương hiệu</h2>
+          <h2 className="font-display font-bold text-3xl md:text-4xl text-foreground">Bộ nhận diện thương hiệu</h2>
         </div>
        {/*  Title bên trên */}
         <div className="space-y-4 mb-8">
@@ -43,7 +43,7 @@ const Brand = ({ images = defaultImages }: BrandProps) => {
         {/* Layout ảnh (chưa sửa gì hết) */}
         <div className="rounded-[28px] p-4 sm:p-5">
           <div className="grid grid-cols-1 gap-5 lg:grid-cols-[1fr_2fr]">
-            <ImageSlot src={images.leftTall} alt="Brand image left tall" className="h-[520px] ring-4 ring-blue-500/70 lg:h-full" />
+            <ImageSlot src={images.leftTall} alt="Brand image left tall" className="h-[520px] lg:h-full" />
 
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
               <ImageSlot src={images.topLeft} alt="Brand image top left" className="h-56" />
