@@ -56,7 +56,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-[75vh] flex items-center justify-center overflow-hidden bg-hero">
+    <section id="home" className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-hero">
       {/* Animated background elements */}
       <div className="absolute inset-x-4 inset-y-12 sm:inset-x-8 sm:inset-y-14 md:inset-x-12 md:inset-y-[4.5rem] lg:inset-x-16 lg:inset-y-12 rounded-3xl overflow-hidden ring-1 ring-white/10">
         <AnimatePresence mode="sync" initial={false}>

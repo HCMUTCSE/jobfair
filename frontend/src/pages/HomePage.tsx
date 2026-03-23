@@ -5,6 +5,8 @@ import AboutSponsor from "../components/AboutSponsor";
 import AchievementsSection from "../components/AchievementSection";
 import View from "../components/MapView";
 import Footer from "../components/footer";
+import Brand from "../components/Brand";
+import Count from "../components/CountDown";
 
 const HomePage = () => {
     return (
@@ -12,8 +14,10 @@ const HomePage = () => {
             <Navbar />
             <main className="pt-16">
                 <HeroSection />
+                <Count />
                 <Sponsor />
                 <AboutSponsor />
+                <Brand/>
                 <AchievementsSection />
                 <View modelUrl="/Map.glb" />
             </main>

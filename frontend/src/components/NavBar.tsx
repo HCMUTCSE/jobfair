@@ -9,6 +9,7 @@ const leftNavBar = [
   { label: "Achievements", hash: "#achievements" },
   { label: "Map", hash: "#mapview" },
   { label: "3D Visiting", hash: "#partners" },
+  { label: "CV Clinic", hash: "#CV" },
 ];
 
 const rightNavBar = [
@@ -45,7 +46,7 @@ const Navbar = () => {
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-card/80 backdrop-blur-xl"
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-start gap-6 px-4 sm:px-6">
+      <div className="mx-auto flex h-10 max-w-7xl items-center justify-start gap-6 px-4 sm:px-6">
         <Link to="/" className="flex items-center gap-2 shrink-0">
           <img src="/logo.png" alt="CSE logo" className="h-[30px] w-auto sm:block" aria-hidden="true" />
           <span className="hidden font-display text-sm font-semibold text-foreground sm:block">CSE JOB FAIR 2026</span>
