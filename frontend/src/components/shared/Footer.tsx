@@ -12,13 +12,13 @@ const quickLinks = [
 ];
 
 const Footer = () => {
-    const logoSrc = `${import.meta.env.BASE_URL}logo.png`;
+    const logoSrc = `${import.meta.env.BASE_URL}logo-name.png`;
 
     return (
         <footer id="contact" className="shared-footer">
             <div className="shared-footer__inner">
                 <div className="shared-footer__brand">
-                    <img src="/logo-name.png" alt="CSE Job Fair" className="shared-footer__logo" />
+                    <img src={logoSrc} alt="CSE Job Fair" className="shared-footer__logo" />
                     <div className="shared-footer__brand-copy">
                         <p className="shared-footer__subtitle">Ngày hội Việc làm - CSE Job Fair là cầu nối thường niên quan trọng, giúp sinh viên ngành Công nghệ thông tin định hướng và nắm bắt cơ hội nghề nghiệp, đồng thời hỗ trợ doanh nghiệp chiêu mộ nguồn nhân lực chất lượng cao.</p>
                     </div>
