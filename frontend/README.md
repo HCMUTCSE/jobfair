@@ -11,23 +11,26 @@ React + TypeScript + Vite frontend for CSE Job Fair pages.
 
 ## Environment
 
-- Copy `.env.example` to `.env`.
+- Run `cp .env.example .env`.
 - Configure `VITE_API_BASE_URL` if backend is not `http://localhost:4000/api`.
 
 ## Routes
 
 - `/` Home page
 - `/register` Register split page
+- `/seminars` Seminar information and modal details
+- `/brand-assets` Brand assets page
 
 ## Structure
 
 - `src/app/App.tsx` route setup
 - `src/pages/home` Home page and page-owned sections
 - `src/pages/register` Register page
+- `src/pages/seminars` Seminars page
+- `src/pages/brand` Brand assets page
 - `src/components/shared` shared shell components (Navbar, Footer)
-- `src/app/services` API client functions
 - `src/assets` critical above-the-fold images imported by pages
-- `public` non-critical static assets (logos, map model)
+- `public` non-critical static assets (logos, map model, seminar photos)
 
 ## Styling
 
@@ -39,4 +42,4 @@ React + TypeScript + Vite frontend for CSE Job Fair pages.
 
 - Components: PascalCase
 - Variables/functions: camelCase
-- Asset filenames: kebab-case
+- Seminar photo groups: `public/seminar-photo/{1..4}/hero.jpg` and `public/seminar-photo/{1..4}/sub.jpg`

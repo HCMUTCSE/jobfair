@@ -1,0 +1,177 @@
+.seminars-page {
+    min-height: 100vh;
+    background: var(--surface-base);
+}
+
+.seminars-page__main {
+    padding-top: var(--navbar-height);
+}
+
+.seminars-page__section {
+    min-height: calc(100dvh - var(--navbar-height));
+    padding: 1.35rem 0;
+    display: grid;
+    align-items: start;
+}
+
+.seminars-page__container {
+    width: min(1200px, 92vw);
+    margin: 0 auto;
+    display: grid;
+    align-content: start;
+}
+
+.seminars-page__title {
+    margin: 0;
+    color: var(--text-main);
+    font-size: clamp(1.35rem, 3vw, 2.2rem);
+}
+
+.seminars-page__intro {
+    margin: 0.55rem 0 0;
+    color: var(--text-muted);
+    max-width: 68ch;
+}
+
+.seminars-page__intro--location {
+    margin-top: 0.4rem;
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+.seminars-page__grid {
+    margin-top: 1.1rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.1rem;
+    min-height: clamp(470px, calc(100dvh - var(--navbar-height) - 210px), 760px);
+}
+
+.seminars-page__card {
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    background: #ffffff;
+    padding: 1.05rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.seminars-page__image {
+    width: 100%;
+    height: 190px;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #d2dfec;
+}
+
+.seminars-page__card h2 {
+    margin: 0.82rem 0 0;
+    color: var(--text-main);
+    font-size: 1.1rem;
+    line-height: 1.35;
+}
+
+.seminars-page__meta {
+    margin: 0.42rem 0 0;
+    color: #446589;
+    font-weight: 600;
+}
+
+.seminars-page__summary {
+    margin: 0.62rem 0 0;
+    color: var(--text-muted);
+    line-height: 1.45;
+}
+
+.seminars-page__card button {
+    margin-top: auto;
+    min-height: 38px;
+    border: 0;
+    border-radius: 10px;
+    background: var(--accent-orange);
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.seminars-page__card button:hover {
+    background: var(--accent-orange-hover);
+}
+
+.seminars-page__modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    background: rgba(9, 20, 34, 0.56);
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+
+.seminars-page__modal {
+    width: min(740px, 96vw);
+    max-height: calc(100dvh - 2rem);
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.2rem;
+    position: relative;
+}
+
+.seminars-page__modal-close {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 999px;
+    background: #eef3fa;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.seminars-page__modal-image {
+    width: 100%;
+    max-height: 430px;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #d2dfec;
+}
+
+.seminars-page__modal h3 {
+    margin: 0.9rem 0 0;
+    color: var(--text-main);
+}
+
+.seminars-page__modal p {
+    margin: 0.55rem 0 0;
+    color: #426286;
+    line-height: 1.45;
+}
+
+.seminars-page__modal-register {
+    display: inline-flex;
+    margin-top: 0.7rem;
+    color: #0f766e;
+    font-weight: 800;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.seminars-page__modal-register:hover {
+    color: #115e59;
+    border-color: #115e59;
+}
+
+@media (max-width: 900px) {
+    .seminars-page__grid {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+}

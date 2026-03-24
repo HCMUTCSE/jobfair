@@ -20,6 +20,8 @@ const HOME_VIDEO_EMBED_URL =
     "https://www.youtube.com/embed/oJLpiaUG57Q?autoplay=1&mute=1&controls=1&loop=1&playlist=oJLpiaUG57Q&playsinline=1&rel=0";
 
 const HomeCountdownSection = () => {
+    const brandLogoSrc = `${import.meta.env.BASE_URL}logo.png`;
+    const brandMarkSrc = `${import.meta.env.BASE_URL}CSExJF.png`;
     const [activeImage, setActiveImage] = useState(0);
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, mins: 0, secs: 0 });
     const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
@@ -101,11 +103,14 @@ const HomeCountdownSection = () => {
 
                 <div className="home-countdown__content">
                     <div className="home-countdown__brand-row" aria-hidden="true">
-                        <img src="/logo.png" alt="" className="home-countdown__brand-logo" />
-                        <img src="/CSExJF.png" alt="" className="home-countdown__brand-mark" />
+                        <img src={brandLogoSrc} alt="" className="home-countdown__brand-logo" />
+                        <img src={brandMarkSrc} alt="" className="home-countdown__brand-mark" />
                     </div>
 
-                    <h1 className="home-countdown__title">SỰ KIỆN SẼ BẮT ĐẦU SAU</h1>
+                    <h1 className="home-countdown__title">
+                        <span className="home-countdown__title-line">SỰ KIỆN</span>
+                        <span className="home-countdown__title-line">SẼ BẮT ĐẦU SAU</span>
+                    </h1>
 
                     <div className="home-countdown__timer">
                         {countdownItems.map((item) => (
@@ -118,7 +123,7 @@ const HomeCountdownSection = () => {
 
                     <div className="home-countdown__actions">
                         <Link to="/register" className="home-countdown__register-btn">
-                            ĐĂNG KÝ
+                            ĐĂNG KÝ NGAY
                         </Link>
                     </div>
                 </div>
@@ -128,12 +133,9 @@ const HomeCountdownSection = () => {
                 <div className="home-countdown__video-wrap">
                     {shouldLoadVideo ? (
                         <iframe
-                            height="900"
-                            width="506.25"
                             className="home-countdown__video"
                             src={HOME_VIDEO_EMBED_URL}
                             title="YouTube video player"
-                            frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen>
                         </iframe>

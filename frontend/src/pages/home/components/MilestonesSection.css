@@ -6,7 +6,7 @@
 }
 
 .home-milestones__container {
-    width: min(1200px, 92vw);
+    width: min(1080px, 90vw);
     margin: 0 auto;
     display: grid;
     align-content: start;
@@ -22,7 +22,7 @@
 .home-milestones__intro {
     margin: 0.7rem 0 0;
     color: var(--text-muted);
-    max-width: auto;
+    max-width: 66ch;
 }
 
 .home-milestones__grid {
@@ -30,16 +30,16 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.1rem;
+    align-items: start;
 }
 
 .home-milestones__card {
-    min-height: 168px;
-    display: grid;
-    align-content: start;
+    display: flex;
+    flex-direction: column;
     border-radius: 16px;
     border: 1px solid var(--border-color);
     background: #ffffff;
-    padding: 1.15rem;
+    padding: 1.35rem;
 }
 
 .home-milestones__card h3 {
@@ -49,18 +49,19 @@
 }
 
 .home-milestones__card p {
-    margin: 0.5rem 0 0;
+    margin: 0.75rem 0 0;
     color: var(--text-muted);
-    font-size: 0.98rem;
+    font-size: 1.02rem;
     line-height: 1.5;
 }
 
 @media (max-width: 900px) {
     .home-milestones__grid {
         grid-template-columns: 1fr;
+        min-height: auto;
     }
 
     .home-milestones__card {
-        min-height: 144px;
+        min-height: 220px;
     }
 }

@@ -8,6 +8,9 @@ import MilestonesSection from "./components/MilestonesSection";
 import "./HomePage.css";
 
 const VenueMapSection = lazy(() => import("./components/VenueMapSection"));
+const MAP_MODEL_URL = import.meta.env.PROD
+    ? "https://media.githubusercontent.com/media/PenguAKAuseless/public-web-JF/main/frontend/public/Map.glb"
+    : `${import.meta.env.BASE_URL}Map.glb`;
 
 const HomePage = () => {
     const [shouldRenderMap, setShouldRenderMap] = useState(false);
@@ -52,7 +55,7 @@ const HomePage = () => {
                             </section>
                         }
                     >
-                        <VenueMapSection modelUrl="/Map.glb" />
+                        <VenueMapSection modelUrl={MAP_MODEL_URL} />
                     </Suspense>
                 ) : (
                     <section id="venue-map" className="home-page__map-placeholder" ref={mapTriggerRef}>

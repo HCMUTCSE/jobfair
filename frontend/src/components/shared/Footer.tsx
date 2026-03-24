@@ -5,11 +5,14 @@ const quickLinks = [
     { label: "Tài trợ", href: "/#sponsors" },
     { label: "Đồng hành", href: "/#partner-stories" },
     { label: "Hành trình", href: "/#milestones" },
+    { label: "Seminars", href: "/seminars" },
     { label: "Bộ nhận diện", href: "/brand-assets" },
     { label: "Bản đồ", href: "/#venue-map" },
 ];
 
 const Footer = () => {
+    const logoSrc = `${import.meta.env.BASE_URL}logo.png`;
+
     return (
         <footer id="contact" className="shared-footer">
             <div className="shared-footer__inner">

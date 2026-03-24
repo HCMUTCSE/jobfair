@@ -24,18 +24,25 @@ const InteractiveModel = ({ url, isHovered, onFitCamera }: InteractiveModelProps
         }
 
         const box = new THREE.Box3().setFromObject(groupRef.current);
+        const size = box.getSize(new THREE.Vector3());
+        const center = box.getCenter(new THREE.Vector3());
         const sphere = box.getBoundingSphere(new THREE.Sphere());
 
-        if (!Number.isFinite(sphere.radius) || sphere.radius <= 0) {
+        if (!Number.isFinite(sphere.radius) || sphere.radius <= 0 || !Number.isFinite(size.length())) {
             return;
         }
 
-        const fov = THREE.MathUtils.degToRad(camera.fov);
-        const distance = sphere.radius / Math.sin(fov / 2);
-        camera.position.set(sphere.center.x, sphere.center.y, sphere.center.z + distance * 1.2);
-        camera.lookAt(sphere.center);
+        const forwardDistance = Math.max(size.z * 0.95, sphere.radius * 1.35);
+        const eyeY = box.min.y + size.y * 0.28;
+        const targetY = box.min.y + size.y * 0.18;
 
-        onFitCamera({ position: camera.position.clone(), target: sphere.center.clone() });
+        camera.position.set(center.x, eyeY, center.z + forwardDistance);
+        camera.lookAt(center.x, targetY, center.z);
+
+        onFitCamera({
+            position: camera.position.clone(),
+            target: new THREE.Vector3(center.x, targetY, center.z),
+        });
     }, [camera, onFitCamera, scene]);
 
     useFrame((state) => {
@@ -51,7 +58,7 @@ const InteractiveModel = ({ url, isHovered, onFitCamera }: InteractiveModelProps
             targetZ.current = 0;
         }
 
-        groupRef.current.rotation.x = THREE.MathUtils.degToRad(53);
+        groupRef.current.rotation.x = THREE.MathUtils.degToRad(6);
         groupRef.current.rotation.y = THREE.MathUtils.lerp(groupRef.current.rotation.y, targetY.current, 0.09);
         groupRef.current.rotation.z = THREE.MathUtils.lerp(groupRef.current.rotation.z, targetZ.current, 0.09);
     });
@@ -109,14 +116,14 @@ const VenueMapSection = ({ modelUrl }: { modelUrl: string }) => {
                         <OrbitControls
                             ref={controlsRef}
                             enablePan={false}
-                            minPolarAngle={Math.PI / 2}
-                            maxPolarAngle={Math.PI / 2}
-                            minDistance={2}
-                            maxDistance={50}
+                            minPolarAngle={THREE.MathUtils.degToRad(80)}
+                            maxPolarAngle={THREE.MathUtils.degToRad(98)}
+                            minDistance={1.4}
+                            maxDistance={22}
                             makeDefault
                         />
                     </Canvas>
-                    <div className="home-map__hint">Di chuột để xoay • Cuộn để thu phóng • Kéo để quan sát</div>
+                    <div className="home-map__hint">Di chuột để xoay - Cuộn để thu phóng - Kéo để quan sát</div>
                 </div>
             </div>
         </section>

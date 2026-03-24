@@ -1,0 +1,33 @@
+name: Deploy Frontend to GitHub Pages
+
+on:
+  push:
+    branches: [ main ] # Trigger on push to main
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          lfs: true
+
+      - name: Install and Build
+        run: |
+          cd frontend  # Navigate to your FE directory
+          npm install
+          npm run build
+          rm -f dist/Map.glb
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: frontend/dist # The folder your build tool generates (dist, build, etc.)
+          branch: gh-pages # The branch the action will create/update
+          token: ${{ secrets.GITHUB_TOKEN }}

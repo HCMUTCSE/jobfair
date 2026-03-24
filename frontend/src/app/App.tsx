@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import HomePage from "../pages/home/HomePage";
 import RegisterPage from "../pages/register/RegisterPage";
 import BrandAssetsPage from "../pages/brand/BrandAssetsPage";
+import SeminarsPage from "../pages/seminars/SeminarsPage";
 
 const ScrollToHash = () => {
   const location = useLocation();
@@ -45,11 +46,12 @@ const NotFound = () => (
 );
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
     <ScrollToHash />
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/register" element={<RegisterPage />} />
+      <Route path="/seminars" element={<SeminarsPage />} />
       <Route path="/brand-assets" element={<BrandAssetsPage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
