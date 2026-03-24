@@ -30,10 +30,9 @@
 }
 
 .shared-footer__logo {
-    width: 84px;
-    height: 84px;
-    border-radius: 18px;
-    background: #ffffff;
+    width: 200px;
+    height: auto;
+    justify-self: center;
     object-fit: contain;
 }
 
@@ -55,6 +54,7 @@
     color: rgba(255, 255, 255, 0.65);
     line-height: 1.55;
     font-size: 11px;
+    text-align: justify;
 }
 
 .shared-footer__heading {
@@ -81,11 +81,15 @@
 }
 
 .shared-footer__mail-group {
-    margin-top: 0.6rem;
     color: #ffffff;
     font-weight: 400;
     font-size: 0.9rem;
     line-height: 1.5;
+    margin: 4.8px 0;
+}
+
+.shared-footer__mail-group p {
+    margin: 4.8px 0;
 }
 
 .shared-footer__mail-title {
@@ -140,16 +144,6 @@ a.shared-footer__mail-title {
     margin: 0.3rem 0;
     color: #ffffff;
     font-weight: 700;
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-
-.shared-footer__mail-group-dash {
-    margin-top: 0.6rem;
-    padding-top: 0.55rem;
-    border-top: 1px dashed rgba(255, 255, 255, 0.16);
-    color: #ffffff;
-    font-weight: 400;
     font-size: 0.9rem;
     line-height: 1.5;
 }

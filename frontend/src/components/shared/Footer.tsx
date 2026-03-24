@@ -3,7 +3,7 @@ import "./Footer.css";
 const quickLinks = [
     { label: "Trang chủ", href: "/#overview" },
     { label: "Tài trợ", href: "/#sponsors" },
-    { label: "Đồng hành", href: "/#partners" },
+    { label: "Đồng hành", href: "/#partner-stories" },
     { label: "Hành trình", href: "/#milestones" },
     { label: "Seminars", href: "/seminars" },
     { label: "Bộ nhận diện", href: "/brand-assets" },
@@ -17,9 +17,8 @@ const Footer = () => {
         <footer id="contact" className="shared-footer">
             <div className="shared-footer__inner">
                 <div className="shared-footer__brand">
-                    <img src={logoSrc} alt="CSE Job Fair" className="shared-footer__logo" />
+                    <img src="/logo-name.png" alt="CSE Job Fair" className="shared-footer__logo" />
                     <div className="shared-footer__brand-copy">
-                        <p className="shared-footer__title">CSE JOB FAIR 2026</p>
                         <p className="shared-footer__subtitle">Ngày hội Việc làm - CSE Job Fair là cầu nối thường niên quan trọng, giúp sinh viên ngành Công nghệ thông tin định hướng và nắm bắt cơ hội nghề nghiệp, đồng thời hỗ trợ doanh nghiệp chiêu mộ nguồn nhân lực chất lượng cao.</p>
                     </div>
                 </div>
@@ -35,23 +34,21 @@ const Footer = () => {
 
                 <div className="shared-footer__infos">
                     <p className="shared-footer__heading">THÔNG TIN SỰ KIỆN</p>
-                    <p className="shared-footer__info-time-title">Thời gian</p>
-                    <p className="shared-footer__info-time">7:00 - 11:30, ngày 28/03/2026</p>
+                    <p className="shared-footer__info-time-title">Khai mạc</p>
+                    <p className="shared-footer__info-time">7g30, ngày 28/03/2026</p>
                     <p className="shared-footer__info-place-title">Địa điểm</p>
                     <p className="shared-footer__info-place">
-                        Sân tòa BK.B6, Trường Đại học Bách khoa - ĐHQG-HCM, cơ sở 2, phường Đông Hòa, TP. Hồ Chí Minh.
+                        Sân BK.B6, Trường Đại học Bách khoa - ĐHQG-HCM, cơ sở 2
                     </p>
                 </div>
 
                 <div className="shared-footer__contact">
                     <p className="shared-footer__heading">LIÊN HỆ</p>
                     <div className="shared-footer__mail-group">
-                        <p className="shared-footer__mail-title">Đoàn Thanh niên - Liên Chi hội Sinh viên khoa KH-KT Máy tính</p>
-                        <a href="mailto:dtn-ktmt@hcmut.edu.vn" className="shared-footer__mail-link">dtn-ktmt@hcmut.edu.vn</a>
+                        <p>Email: <a href="mailto:dtn-ktmt@hcmut.edu.vn" className="shared-footer__mail-link">dtn-ktmt@hcmut.edu.vn</a></p>
                     </div>
-                    <div className="shared-footer__mail-group-dash">
-                        <div><a href="https://www.facebook.com/BKCSE.Multimedia" className="shared-footer__mail-title">Ban Truyền thông khoa KH-KT Máy tính</a></div>
-                        <a href="mailto:csemultimedia@hcmut.edu.vn" className="shared-footer__mail-link">csemultimedia@gmail.com</a>
+                    <div className="shared-footer__mail-group">
+                        <p>Fanpage: <a href="https://www.facebook.com/BKCSE.Multimedia" className="shared-footer__mail-title">Ban Truyền thông khoa KH-KT Máy tính</a></p>
                     </div>
                 </div>
             </div>
