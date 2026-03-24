@@ -1,6 +1,6 @@
 import { Suspense, useEffect, useRef, useState } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { Center, ContactShadows, Environment, Html, OrbitControls, useGLTF } from "@react-three/drei";
+import { Center, Environment, Html, OrbitControls, useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 import type { OrbitControls as OrbitControlsImpl } from "three-stdlib";
 import "./VenueMapSection.css";
@@ -103,7 +103,6 @@ const VenueMapSection = ({ modelUrl }: { modelUrl: string }) => {
                             }
                         >
                             <InteractiveModel url={modelUrl} isHovered={isHovered} onFitCamera={onFitCamera} />
-                            <ContactShadows position={[0, -1.5, 0]} opacity={0.35} scale={8} blur={2.5} />
                             <Environment preset="city" />
                         </Suspense>
 
