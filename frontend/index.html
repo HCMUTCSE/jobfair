@@ -6,6 +6,20 @@
   <link rel="icon" type="image/png" href="/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ngày hội Việc làm khoa Khoa học và Kỹ thuật Máy tính - CSE Job Fair 2026</title>
+  <script>
+    // Support direct deep-link visits on GitHub Pages by decoding the 404 redirect URL.
+    (function (location) {
+      if (location.search[1] === '/') {
+        const decoded = location.search
+          .slice(1)
+          .split('&')
+          .map((segment) => segment.replace(/~and~/g, '&'))
+          .join('?');
+
+        window.history.replaceState(null, '', location.pathname.slice(0, -1) + decoded + location.hash);
+      }
+    })(window.location);
+  </script>
 </head>
 
 <body>

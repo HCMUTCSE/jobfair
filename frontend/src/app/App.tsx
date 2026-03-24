@@ -45,7 +45,7 @@ const NotFound = () => (
 );
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
     <ScrollToHash />
     <Routes>
       <Route path="/" element={<HomePage />} />
