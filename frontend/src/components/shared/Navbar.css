@@ -42,12 +42,12 @@
 .shared-navbar__desktop {
     display: flex;
     align-items: center;
-    gap: 0.35rem;
+    gap: 0.5rem;
     margin-left: 0.8rem;
 }
 
 .shared-navbar__link {
-    padding: 0.34rem 0.52rem;
+    padding: 0.34rem 0.62rem;
     border-radius: 8px;
     color: var(--text-muted);
     text-decoration: none;

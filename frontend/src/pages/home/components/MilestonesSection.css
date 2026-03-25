@@ -6,7 +6,7 @@
 }
 
 .home-milestones__container {
-    width: min(1080px, 90vw);
+    width: min(1200px, 92vw);
     margin: 0 auto;
     display: grid;
     align-content: start;

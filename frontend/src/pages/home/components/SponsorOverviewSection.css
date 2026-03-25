@@ -3,7 +3,7 @@
     min-height: calc(100dvh - var(--navbar-height));
     display: grid;
     align-items: start;
-    scroll-margin-top: 8px;
+    scroll-margin-top: var(--navbar-height);
 }
 
 .home-sponsor-overview__container {

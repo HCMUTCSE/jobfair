@@ -4,7 +4,7 @@ import "./Footer.css";
 const quickLinks = [
     { label: "Trang chủ", href: "/#overview" },
     { label: "Tài trợ", href: "/#sponsors" },
-    { label: "Đồng hành", href: "/#partner-stories" },
+    { label: "Đồng hành", href: "/#partners" },
     { label: "Hành trình", href: "/#milestones" },
     { label: "Seminars", href: "/seminars" },
     { label: "Bộ nhận diện", href: "/brand-assets" },
@@ -46,10 +46,10 @@ const Footer = () => {
                 <div className="shared-footer__contact">
                     <p className="shared-footer__heading">LIÊN HỆ</p>
                     <div className="shared-footer__mail-group">
-                        <p>Email: <a href="mailto:dtn-ktmt@hcmut.edu.vn" className="shared-footer__mail-link">dtn-ktmt@hcmut.edu.vn</a></p>
+                        <p><span className="shared-footer__mail-label">Email: </span><a href="mailto:dtn-ktmt@hcmut.edu.vn" className="shared-footer__mail-link">dtn-ktmt@hcmut.edu.vn</a></p>
                     </div>
                     <div className="shared-footer__mail-group">
-                        <p>Fanpage: <a href="https://www.facebook.com/BKCSE.Multimedia" className="shared-footer__mail-title">Ban Truyền thông khoa KH-KT Máy tính</a></p>
+                        <p><span className="shared-footer__mail-label">Fanpage: </span><a href="https://www.facebook.com/BKCSE.Multimedia" className="shared-footer__mail-title">Ban Truyền thông khoa KH-KT Máy tính</a></p>
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@
 .brand-assets-page__main {
     width: min(1200px, 92vw);
     margin: 0 auto;
-    padding: calc(var(--navbar-height) + 0.65rem) 0 1.2rem;
+    padding: calc(var(--navbar-height) + 1.35rem) 0 1.2rem;
 }
 
 .brand-assets-page__hero h1 {
