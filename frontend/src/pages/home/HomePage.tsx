@@ -8,11 +8,46 @@ import MilestonesSection from "./components/MilestonesSection";
 import "./HomePage.css";
 
 const VenueMapSection = lazy(() => import("./components/VenueMapSection"));
-const MAP_MODEL_URL = `${import.meta.env.BASE_URL}Map.glb`;
+const MAP_MODEL_CANDIDATES = [
+    `${import.meta.env.BASE_URL}Map.glb`,
+    `${import.meta.env.BASE_URL}Map`,
+    "https://media.githubusercontent.com/media/PenguAKAuseless/public-web-JF/main/frontend/public/Map.glb",
+];
 
 const HomePage = () => {
     const [shouldRenderMap, setShouldRenderMap] = useState(false);
+    const [mapModelUrl, setMapModelUrl] = useState(MAP_MODEL_CANDIDATES[0]);
+    const [isMapModelResolved, setIsMapModelResolved] = useState(false);
     const mapTriggerRef = useRef<HTMLElement | null>(null);
+
+    useEffect(() => {
+        let cancelled = false;
+
+        const resolveMapUrl = async () => {
+            for (const candidate of MAP_MODEL_CANDIDATES) {
+                try {
+                    const response = await fetch(candidate, { method: "HEAD" });
+                    if (!cancelled && (response.ok || response.status === 405)) {
+                        setMapModelUrl(candidate);
+                        setIsMapModelResolved(true);
+                        return;
+                    }
+                } catch {
+                    // Try next candidate URL.
+                }
+            }
+
+            if (!cancelled) {
+                setIsMapModelResolved(true);
+            }
+        };
+
+        void resolveMapUrl();
+
+        return () => {
+            cancelled = true;
+        };
+    }, []);
 
     useEffect(() => {
         if (shouldRenderMap || !mapTriggerRef.current) {
@@ -53,7 +88,16 @@ const HomePage = () => {
                             </section>
                         }
                     >
-                        <VenueMapSection modelUrl={MAP_MODEL_URL} />
+                        {isMapModelResolved ? (
+                            <VenueMapSection modelUrl={mapModelUrl} />
+                        ) : (
+                            <section id="venue-map" className="home-page__map-placeholder">
+                                <div className="home-page__map-placeholder-inner">
+                                    <h2>Bản đồ 3D khu vực sự kiện</h2>
+                                    <p>Đang kiểm tra nguồn mô hình 3D...</p>
+                                </div>
+                            </section>
+                        )}
                     </Suspense>
                 ) : (
                     <section id="venue-map" className="home-page__map-placeholder" ref={mapTriggerRef}>
