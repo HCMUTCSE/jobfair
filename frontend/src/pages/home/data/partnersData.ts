@@ -206,11 +206,12 @@ export const partners: Partner[] = [
         websiteUrl: "https://www.renesas.com/",
         recruitmentNews: [
             "10 Hardware Design Intern",
+            "3rd or final year students majoring in Electronics, Telecommunications, Mechatronics, Automation, Computer Science, Computer Engineering, Information Technology, Mathematics, and Physics.",
+            "Good at English in writing and speaking skills, distinguished competence, consistent pursuit of excellence, professional behavior, and good relationships with others and society.", 
+            "Have a strong passion in the technical field, especially in chip design.",
+            "Have logical thinking and explanation; be serious and mature in working attitude Long- term working commitment",
         ],
         documents: [
-            "3rd or final year students majoring in Electronics, Telecommunications, Mechatronics, Automation, Computer Science, Computer Engineering, Information Technology, Mathematics, and Physics.",
-            "Good at English in writing and speaking skills, distinguished competence, consistent pursuit of excellence, professional behavior, and good relationships with others and society.Have a strong passion in the technical field, especially in chip design.",
-            "Have logical thinking and explanation; be serious and mature in working attitude Long- term working commitment",
         ],
     },
     {
@@ -266,9 +267,13 @@ export const partners: Partner[] = [
         description: "MGM Technology Partner là công ty chuyên cung cấp các giải pháp công nghệ thông tin và dịch vụ cho doanh nghiệp.",
         websiteUrl: "https://www.mgm-tp.com/",
         recruitmentNews: [
-            "C\u00E1c v\u1ECB tr\u00ED tuy\u1EC3n d\u1EE5ng v\u00E0 y\u00EAu c\u1EA7u c\u1EE7a c\u00F4ng ty \u0111\u01B0\u1EE3c gi\u1EDBi thi\u1EC7u t\u1EA1i trang web n\u00E0y: https://mgmtp.hire.trakstar.com/",
+            "DevOps Engineer",
+            "Frontend Developer",
+            "Fullstack Developer",
+            "Java Developer"
         ],
         documents: [
+            "https://mgmtp.hire.trakstar.com/"
         ],
     },
     {
@@ -294,7 +299,7 @@ export const partners: Partner[] = [
         description: "Tecalliance là công ty chuyên cung cấp các giải pháp công nghệ thông tin và dịch vụ cho doanh nghiệp.",
         websiteUrl: "https://www.tecalliance.net/",
         recruitmentNews: [
-            "Wiring Diagrams - 1 V\u1ECB tr\u00ED - M\u00ECnh s\u1EBD g\u1EEDi th\u00F4ng tin c\u1EE7a v\u1ECB tr\u00ED tuy\u1EC3n d\u1EE5ng trong ng\u00E0y mai",
+            "01 Wiring Diagrams Developer",
         ],
         documents: [
         ],
@@ -306,7 +311,8 @@ export const partners: Partner[] = [
         description: "Gihot là công ty chuyên cung cấp các giải pháp công nghệ thông tin và dịch vụ cho doanh nghiệp.",
         websiteUrl: "https://gihot.vn/",
         recruitmentNews: [
-            "V\u1ECB tr\u00ED Unity Technical Artist, s\u1ED1 l\u01B0\u1EE3ng 2. V\u1ECB tr\u00ED th\u1EF1c t\u1EADp sinh Unity Developer, s\u1ED1 l\u01B0\u1EE3ng 2",
+            "02 Unity Technical Artist",
+            "02 Unity Developer",
         ],
         documents: [
             "https://drive.google.com/open?id=1zZ1dCb3LF1mKl-qzgd5nvrGaHFVfvU3Z",
@@ -320,7 +326,7 @@ export const partners: Partner[] = [
         description: "WorldQuant là công ty chuyên cung cấp các giải pháp công nghệ thông tin và dịch vụ cho doanh nghiệp.",
         websiteUrl: "https://www.worldquant.com/",
         recruitmentNews: [
-            "Ko th\u1EA5y g\u1EEDi",
+            "N/A",
         ],
         documents: [
         ],
@@ -332,7 +338,7 @@ export const partners: Partner[] = [
         description: "Datalogic là công ty chuyên cung cấp các giải pháp công nghệ thông tin và dịch vụ cho doanh nghiệp.",
         websiteUrl: "https://www.datalogic.com/",
         recruitmentNews: [
-            "5 intern cho ch\u01B0\u01A1ng tr\u00ECnh Datalogic NextGen. -        \u0110\u1ED1i t\u01B0\u1EE3ng SV (y\u00EAu c\u1EA7u t\u1ED1i thi\u1EC3u/ \u0111\u1EB7c bi\u1EC7t d\u00E0nh cho SV \u0111\u1EE7 chu\u1EA9n \u0111\u0103ng k\u00FD/ n\u1ED9p h\u1ED3 s\u01A1 \u1EE9ng tuy\u1EC3n - n\u1EBFu c\u00F3): +        C\u00F3 hi\u1EC3u bi\u1EBFt c\u01A1 b\u1EA3n v\u1EC1 c\u00E1c kh\u00E1i ni\u1EC7m l\u1EADp tr\u00ECnh v\u00E0 c\u1EA5u tr\u00FAc d\u1EEF li\u1EC7u. +        S\u1EED d\u1EE5ng quen thu\u1ED9c h\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD phi\u00EAn b\u1EA3n ph\u1EA7n m\u1EC1m nh\u01B0 Git. +        S\u1EB5n s\u00E0ng h\u1ECDc h\u1ECFi c\u00E1c c\u00F4ng ngh\u1EC7 m\u1EDBi. +        K\u1EF9 n\u0103ng giao ti\u1EBFp t\u1ED1t. +        \u0110am m\u00EA x\u00E2y d\u1EF1ng s\u1EA3n ph\u1EA9m th\u1EF1c t\u1EBF v\u00E0 gi\u1EA3i quy\u1EBFt c\u00E1c v\u1EA5n \u0111\u1EC1 k\u1EF9 thu\u1EADt.",
+            "05 intern cho Ch\u01B0\u01A1ng tr\u00ECnh Datalogic NextGen. ",
         ],
         documents: [
             "https://drive.google.com/open?id=1wSEBPGid-CF5C-coUPihlkQdYK0K75sO",
@@ -347,9 +353,8 @@ export const partners: Partner[] = [
         websiteUrl: "https://vn-cubesystem.com/",
         recruitmentNews: [
             "Fresher: Manual test, Java, .NET, NodeJS, Autotest, Data Engineer. Intern All Skills",
-            "Tuy\u1EC3n d\u1EE5ng: Th\u1EF1c t\u1EADp sinh IT",
-            "SL: 6 b\u1EA1n",
-            "Y\u00EAu c\u1EA7u: Sinh vi\u00EAn n\u0103m cu\u1ED1i, m\u1EDBi t\u1ED1t nghi\u1EC7p c\u00E1c ng\u00E0nh C\u00F4ng ngh\u1EC7 th\u00F4ng tin t\u1EA1i c\u00E1c tr\u01B0\u1EDDng \u0110\u1EA1i H\u1ECDc. \u0110\u00E3 v\u00E0 \u0111ang h\u1ECDc c\u00E1c ng\u00F4n ng\u1EEF l\u1EADp tr\u00ECnh nh\u01B0:Java, .NET, NodeJS, Vue, (IOS, Android) Kotlin, Java, ReactNatie, Flutter, Swift, Objective-C\u2026 C\u00F3 ti\u1EBFng Nh\u1EADt N4 tr\u1EDF l\u00EAn l\u00E0 1 l\u1EE3i th\u1EBF",
+            "Th\u1EF1c t\u1EADp sinh IT",
+            "SL: 06 b\u1EA1n",
         ],
         documents: [
             "https://drive.google.com/open?id=1r9mr36vDmMcLHX796y8Ca9QgALatS8nX",
@@ -363,7 +368,7 @@ export const partners: Partner[] = [
         description: "FPT Education là tổ chức giáo dục hàng đầu tại Việt Nam, chuyên cung cấp các chương trình đào tạo chất lượng cao và các giải pháp giáo dục sáng tạo nhằm phát triển nguồn nhân lực chất lượng cho tương lai.",
         websiteUrl: "https://fschool.fpt.edu.vn/",
         recruitmentNews: [
-            "Nhi\u1EC1u qu\u00E1 :)",
+            "Giảng viên ngành IT", "Giảng viên ngành Trí tuệ nhân tạo"
         ],
         documents: [
             "https://career.fpt.edu.vn/",
@@ -395,31 +400,27 @@ export const partners: Partner[] = [
         description: "C\u00F4ng ty C\u1ED5 ph\u1EA7n Tin h\u1ECDc L\u1EA1c Vi\u1EC7t là đơn vị cung cấp các giải pháp công nghệ thông tin và dịch vụ cho doanh nghiệp.",
         websiteUrl: "https://lacviet.vn/",
         recruitmentNews: [
-            "V\u1ECB tr\u00ED \u0111ang tuy\u1EC3n d\u1EE5ng",
-            "+ IT",
-            "- Software Developer (.NET, C#, ASP.NET)",
-            "- Ph\u00E1t tri\u1EC3n ph\u1EA7n m\u1EC1m",
-            "- Software Implementation",
-            "- Tri\u1EC3n khai ph\u1EA7n m\u1EC1m (TP.H\u1ED3 Ch\u00ED Minh/ V\u0169ng T\u00E0u)",
-            "- Implementation Consultant",
-            "- T\u01B0 v\u1EA5n Tri\u1EC3n khai",
-            "- System Engineer",
-            "- K\u1EF9 s\u01B0 h\u1EC7 th\u1ED1ng",
-            "- Business Analyst",
-            "- Ph\u00E2n t\u00EDch nghi\u1EC7p v\u1EE5",
-            "- Application Consultant",
-            "- T\u01B0 v\u1EA5n \u1EE9ng d\u1EE5ng",
-            "- Database Adminstator",
-            "- Qu\u1EA3n tr\u1ECB c\u01A1 s\u1EDF d\u1EEF li\u1EC7u",
-            "+ Non-IT",
-            "- Accountant",
-            "- K\u1EBF to\u00E1n",
-            "- Sales Representative",
-            "- Nh\u00E2n vi\u00EAn kinh doanh",
-            "Intern/Th\u1EF1c t\u1EADp sinh",
-            "+ AI Intern - TTS AI",
-            "+ Developer Intern - TTS Ph\u00E1t tri\u1EC3n ph\u1EA7n m\u1EC1m",
-            "+ Tester/QC Intern \u2013 TTS Ki\u1EC3m th\u1EED ph\u1EA7n m\u1EC1m",
+            "Software Developer (.NET, C#, ASP.NET)",
+            "Ph\u00E1t tri\u1EC3n ph\u1EA7n m\u1EC1m",
+            "Software Implementation",
+            "Tri\u1EC3n khai ph\u1EA7n m\u1EC1m (TP.H\u1ED3 Ch\u00ED Minh/ V\u0169ng T\u00E0u)",
+            "Implementation Consultant",
+            "T\u01B0 v\u1EA5n Tri\u1EC3n khai",
+            "System Engineer",
+            "K\u1EF9 s\u01B0 h\u1EC7 th\u1ED1ng",
+            "Business Analyst",
+            "Ph\u00E2n t\u00EDch nghi\u1EC7p v\u1EE5",
+            "Application Consultant",
+            "T\u01B0 v\u1EA5n \u1EE9ng d\u1EE5ng",
+            "Database Adminstator",
+            "Qu\u1EA3n tr\u1ECB c\u01A1 s\u1EDF d\u1EEF li\u1EC7u",
+            "Accountant",
+            "K\u1EBF to\u00E1n",
+            "Sales Representative",
+            "Nh\u00E2n vi\u00EAn kinh doanh",
+            "AI Intern - TTS AI",
+            "Developer Intern - TTS Ph\u00E1t tri\u1EC3n ph\u1EA7n m\u1EC1m",
+            "Tester/QC Intern \u2013 TTS Ki\u1EC3m th\u1EED ph\u1EA7n m\u1EC1m",
         ],
         documents: [
             "https://drive.google.com/open?id=1CdW4DIjQmNm_-vuxgihWiZmmKAwMSXkE",
@@ -496,7 +497,7 @@ export const partners: Partner[] = [
         description: "Petrosetco là công ty chuyên cung cấp dịch vụ phân phối tổng hợp dầu khí, đáp ứng nhu cầu năng lượng và cung cấp các sản phẩm dầu khí chất lượng cao cho các doanh nghiệp trên toàn đất nước.",
         websiteUrl: "https://www.petrosetco.com.vn/",
         recruitmentNews: [
-            "10 nh\u00E2n s\u1EF1 \u0110\u1EA1i di\u1EC7n kinh doanh",
+            "10 \u0110\u1EA1i di\u1EC7n kinh doanh",
             "01 Nh\u00E2n vi\u00EAn Marketing:",
             "01 K\u1EBF to\u00E1n",
             "01 Nh\u00E2n vi\u00EAn IT Helpdesk",
