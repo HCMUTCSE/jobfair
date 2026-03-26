@@ -83,7 +83,7 @@
 .home-sponsor-overview__tier-logos {
     --logo-gap: clamp(0.7rem, 1.4vw, 1rem);
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-content: start;
     gap: var(--logo-gap);
@@ -91,9 +91,9 @@
 }
 
 .home-sponsor-overview__tier-logo-item {
-    flex: 0 1 calc((100% - (var(--logo-gap) * 2)) / 3);
-    min-width: min(170px, 100%);
-    max-width: 240px;
+    flex: 0 1 calc((100% - (var(--logo-gap) * 4)) / 5);
+    min-width: min(120px, 100%);
+    max-width: 180px;
     min-height: 88px;
     position: relative;
     display: grid;
