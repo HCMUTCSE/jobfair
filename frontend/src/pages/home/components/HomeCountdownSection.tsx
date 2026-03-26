@@ -11,9 +11,14 @@ import hero07 from "../../../assets/hero/hero-07.jpg";
 import hero08 from "../../../assets/hero/hero-08.jpg";
 import hero09 from "../../../assets/hero/hero-09.jpg";
 import hero10 from "../../../assets/hero/hero-10.jpg";
+import hero11 from "../../../assets/hero/hero-11.jpg";
+import hero12 from "../../../assets/hero/hero-12.jpg";
+import hero13 from "../../../assets/hero/hero-13.jpg";
+import hero14 from "../../../assets/hero/hero-14.jpg";
+import hero15 from "../../../assets/hero/hero-15.jpg";
 import "./HomeCountdownSection.css";
 
-const heroImages = [hero10, hero09, hero08, hero07, hero06, hero05, hero04, hero03, hero02, hero01];
+const heroImages = [hero01, hero02, hero03, hero04, hero05, hero06, hero07, hero08, hero09, hero10, hero11, hero12, hero13, hero14, hero15];
 const targetDate = new Date("2026-03-28T07:00:00");
 const HERO_ROTATION_MS = 6500;
 const HOME_VIDEO_EMBED_URL =
