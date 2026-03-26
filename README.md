@@ -7,6 +7,10 @@ Monorepo includes:
 
 Current version for both apps is `0.0.0`.
 
+## Link to live site:
+- Personal GitHub Pages: https://penguakauseless.github.io/jobfair/
+- CSE Official Domain: https://cse.hcmut.edu.vn/jobfair/
+
 ## Setup
 
 1. Backend:
